@@ -39,13 +39,15 @@
             const id = params.get("id");
 
             const files = [
-                "super-mario-flash-2"
+                "super-mario-flash-2",
+                "072404",
+                "2004100902"
             ]
 
             const swfFile = "./swf/" + files[id] + ".swf"
             // SWFファイル名を決定（存在しない場合はエラーメッセージ）
 
-            if (files[id]) {
+            if (files[id] != undefined) {
                 // Ruffleのインスタンスを作成
                 const ruffle = window.RufflePlayer.newest();
                 const player = ruffle.createPlayer();
