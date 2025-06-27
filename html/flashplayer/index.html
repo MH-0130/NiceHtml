@@ -31,6 +31,7 @@
             <h1>Flash Player</h1>
         </div>
 
+        <h2 id="title"></h2>
         <div id="player"></div>
 
         <script>
@@ -52,7 +53,7 @@
 
             if (id < files.length) {
                 // 題名を表示
-                document.getElementById("player").innerText = files[id][0];
+                document.getElementsById("title").innerText = files[id][0];
 
                 // Ruffleのインスタンスを作成
                 const ruffle = window.RufflePlayer.newest();
