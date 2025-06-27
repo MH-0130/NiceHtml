@@ -38,12 +38,12 @@
             const params = new URLSearchParams(window.location.search);
             const id = params.get("id");
 
-            const swfFile = "./swf/" + {
-                smf2: "super-mario-flash-2"
-            }[id] + ".swf"
+            const swfFile = "./swf/" + [
+                "super-mario-flash-2"
+            ][id] + ".swf"
             // SWFファイル名を決定（存在しない場合はエラーメッセージ）
 
-            if (swfFile) {
+            if (swfFile[id]) {
                 // Ruffleのインスタンスを作成
                 const ruffle = window.RufflePlayer.newest();
                 const player = ruffle.createPlayer();
