@@ -48,7 +48,7 @@
             const swfFile = "./swf/" + files[id][1] + ".swf"
             // SWFファイル名を決定（存在しない場合はエラーメッセージ）
 
-            if (id >= files.length) {
+            if (id < files.length) {
                 // 題名を表示
                 document.getElementById("player").innerText = files[id][0];
 
