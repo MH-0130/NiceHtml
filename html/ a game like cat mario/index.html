@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzOwata's Page - Links</title>
+    <link rel="stylesheet" type="text/css" href="./../../base.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <a href="./../../index.html">
+            <img src="./../../images/icon.svg">
+            <div class="header-title">AzOwata's Page</div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="./../../index.html">Home</a></li>
+                <li><a href="./../projects/index.html">Projects</a></li>
+                <li><a href="./../links/index.html">Links</a></li>
+                <li><a href="https://discord.gg/3M2jSCnzmN">Join our Discord!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-box">
+            <h1>A Game Like Cat Mario</h1>
+            <div>
+                <p><br></p>
+            </div>
+        </div>
+        <div class="game-box">
+            <canvas id="aglcm-canvas" width="480" height="360", style="image-rendering: pixelated;"></canvas>
+        </div>
+        <div class="main-box">
+            <h3>Configuration</h3>
+            <div class="config">
+                <label for="toggle-stop" class="toggle-label">
+                    <div class="toggle-title">Stop</div>
+                    <div class="toggle-button">
+                        <input type="checkbox" id="toggle-stop">
+                        <div class="toggle-circle"></div>
+                        <div class="toggle-base"></div>
+                    </div>
+                </label>
+                
+                <div class="input">
+                    <div>Speed</div>
+                    <input type="number" name="speed_input" id="input-speed" class="input-box">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./a_game_like_cat_mario.js"></script>
+</body>
+
+</html>
