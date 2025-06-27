@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+    color: #ececec;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    /*画面の高さの最小値を指定*/
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+header {
+    background-color: #171717;
+    /* border-bottom: 4px solid #444; */
+    box-shadow: 0 0 10px #444;
+    display: flex;
+    align-items: center;
+    padding: 0rem 0rem;
+    top: 0;
+    z-index: 100;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-title {
+    color: #cdcdcd;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+header img {
+    width: 64px;
+    height: 64px;
+    margin: 0 0.5rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    margin: 0 0 0 auto;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 0.5rem;
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #cdcdcd;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/*ハンバーガーメニュー*/
+/*color: #ececec*/
+
+.main-box {
+    margin-left: 5%;
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    color: #000;
+}

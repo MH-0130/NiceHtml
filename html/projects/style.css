@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.projects {
+    display: flex;
+}
+.projects-box {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #888;
+    border-radius: 4px;
+    box-shadow: 4px #bbb;
+}
