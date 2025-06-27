@@ -38,17 +38,20 @@
             const params = new URLSearchParams(window.location.search);
             const id = params.get("id");
 
-            const files = {
-                "Super Mario Flash 2": "super-mario-flash-2",
-                "千葉！滋賀！佐賀！": "072404",
-                "もすかう": "mosukau1",
-                "マイアヒ": "2004100902"
-            }
+            const files = [
+                ["Super Mario Flash 2", "super-mario-flash-2"],
+                ["千葉！滋賀！佐賀！", "072404"],
+                ["もすかう", "mosukau1"],
+                ["マイアヒ", "2004100902"]
+            ]
 
-            const swfFile = "./swf/" + files[id] + ".swf"
+            const swfFile = "./swf/" + files[id][1] + ".swf"
             // SWFファイル名を決定（存在しない場合はエラーメッセージ）
 
-            if (files[id] != undefined) {
+            if (id >= files.length) {
+                // 題名を表示
+                document.getElementById("player").innerText = files[id][0];
+
                 // Ruffleのインスタンスを作成
                 const ruffle = window.RufflePlayer.newest();
                 const player = ruffle.createPlayer();
