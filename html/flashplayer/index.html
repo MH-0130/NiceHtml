@@ -45,11 +45,18 @@
                 ["Super Mario Flash 2 ver.c", "smf2vc"],
                 ["Super Mario Flash 3", "SMF3"],
                 ["千葉！滋賀！佐賀！", "072404"],
-                ["マイアヒ", "2004100902"]
+                ["マイアヒ", "2004100902"],
+                ["ピクトさんをさがせ！１（お風呂場編）", "https://games.no1game.net/escapemen/game0001.swf"]
             ]
 
-            const swfFile = "./swf/" + files[id][1] + ".swf"
-            // SWFファイル名を決定（存在しない場合はエラーメッセージ）
+
+            var swfFile;
+            // SWFファイル名を決定（存在しない場合はエラーメッセージ
+            if (files[id][1].includes("http") && files[id][1].includes(".swf")) {
+                swfFile = files[id][1];
+            } else {
+                swfFile = "./swf/" + files[id][1] + ".swf"
+            }
 
             if (id < files.length) {
                 // 題名を表示
