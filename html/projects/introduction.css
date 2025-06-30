@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
 .main-box img {
-    width: auto;
-    height: 50%;
+    width: 50%;
+    height: auto;
 }
