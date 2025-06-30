@@ -4,9 +4,18 @@
     display: flex;
 }
 .projects-box {
+    width: 24%;
     padding: 1rem;
     margin: 1rem;
     background-color: #888;
     border-radius: 4px;
     box-shadow: 4px #bbb;
+    overflow: hidden;
+}
+
+.projects-box img {
+    width: 100%;          /* 横幅いっぱいに広げる */
+    height: auto;         /* 縦横比を維持して縮小 */
+    display: block;       /* 下の余白対策 */
+    object-fit: contain;  /* 必要に応じてfillやcoverに変更 */
 }
